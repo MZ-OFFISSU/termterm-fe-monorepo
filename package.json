@@ -1,0 +1,12 @@
+{
+  "name": "termterm",
+  "version": "1.0.0",
+  "description": "termterm hybrid web monorepo",
+  "scripts": {
+    "libs": "pnpm -F @termterm/libs",
+    "hooks": "pnpm -F @termterm/hooks",
+    "ui": "pnpm -F @termterm/ui"
+  },
+  "keywords": [],
+  "author": ""
+}
