@@ -1,5 +1,2 @@
-const testUtil = (u: number, v: number) => {
-  return u + v
-}
-
-export default testUtil
+export { default as add } from "./calculate/add";
+export { default as minus } from "./calculate/minus";
