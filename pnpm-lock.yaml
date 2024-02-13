@@ -190,6 +190,9 @@ importers:
       '@termterm/libs':
         specifier: workspace:^
         version: link:../../common/libs
+      '@termterm/ui':
+        specifier: workspace:^
+        version: link:../../common/ui
       hooks:
         specifier: ^0.3.2
         version: 0.3.2

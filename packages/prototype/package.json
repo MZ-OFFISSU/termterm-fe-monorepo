@@ -12,6 +12,7 @@
   "dependencies": {
     "@termterm/hooks": "workspace:^",
     "@termterm/libs": "workspace:^",
+    "@termterm/ui": "workspace:^",
     "hooks": "^0.3.2",
     "libs": "^0.1.2",
     "react": "^18.2.0",
