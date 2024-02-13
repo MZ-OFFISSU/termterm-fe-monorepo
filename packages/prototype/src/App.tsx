@@ -1,8 +1,8 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./App.css";
 import { useCounter, useInput } from "@termterm/hooks";
 import { add, minus } from "@termterm/libs";
+import { Button } from "@termterm/ui";
 
 function App() {
   const { count, increment } = useCounter();
@@ -29,6 +29,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Button title="유지민 멍청이" />
     </>
   );
 }

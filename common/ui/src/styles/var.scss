@@ -1,0 +1,56 @@
+@use "sass:math";
+
+$breakpoints: (
+  "default": null,
+  "small_mobile": 320px,
+  "basic_mobile": 375px,
+  "small_tablet": 425px,
+  "basic_tablet": 768px,
+  "small_pc": 1024px,
+  "basic_pc": 1440px,
+  "regular_pc": 1920px,
+  "large_pc": 2560px,
+);
+
+$rates: (
+  "default": 0.7,
+  "small_mobile": 0.75,
+  "basic_mobile": 0.75,
+  "small_tablet": 0.8,
+  "basic_tablet": 0.8,
+  "small_pc": 0.8,
+  "basic_pc": 0.8,
+  "regular_pc": 0.8,
+  "large_pc": 1,
+);
+
+@mixin set-vw($property, $px) {
+  @each $name, $width in $breakpoints {
+    $rate: map-get($rates, $name);
+
+    @if $width {
+      @media (min-width: $width) {
+        #{$property}: $px * $rate;
+      }
+    } @else {
+      #{$property}: $px * $rate;
+    }
+  }
+}
+
+@mixin set-pair-vw($property, $vertical, $horizontal) {
+  @each $name, $width in $breakpoints {
+    $rate: map-get($rates, $name);
+
+    @if $width {
+      @media (min-width: $width) {
+        #{$property}: $vertical * $rate $horizontal * $rate;
+      }
+    } @else {
+      #{$property}: $vertical * $rate $horizontal * $rate;
+    }
+  }
+}
+
+$temp1: aqua;
+$temp2: crimson;

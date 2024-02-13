@@ -1,0 +1,7 @@
+@import "../../styles/var.scss";
+
+.temp {
+  @include set-vw(font-size, 32px);
+  background-color: $temp1;
+  color: $temp2;
+}
