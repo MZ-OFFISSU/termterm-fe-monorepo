@@ -9,5 +9,8 @@
     "prototype": "pnpm -F @termterm/prototype"
   },
   "keywords": [],
-  "author": ""
+  "author": "",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
 }
