@@ -5,7 +5,8 @@
   "scripts": {
     "libs": "pnpm -F @termterm/libs",
     "hooks": "pnpm -F @termterm/hooks",
-    "ui": "pnpm -F @termterm/ui"
+    "ui": "pnpm -F @termterm/ui",
+    "prototype": "pnpm -F @termterm/prototype"
   },
   "keywords": [],
   "author": ""
